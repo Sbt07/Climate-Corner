@@ -94,34 +94,33 @@ body{
     display: none;
 }
 
-@media (max-width: 460px){
-    .card{
+@media (max-width: 460px) {
+    .card {
         width: 85%;
         max-width: 270px;
-        margin: 100px auto ;
-        padding: 20px 15px;
-    
+        margin: 100px auto;
+        padding: 20px 6px;
     }
-    .search{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .search input{
-        padding: 2px 2px 2px 14px;
+    .search input {
+        padding-left: 15px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-right: 0px; 
         height: 40px;
         border-radius: 20px;
-        margin-right: 8px;
-        font-size: 14px;
+        margin-right: 7px; 
+        font-size: 13px;
+        margin-left: 10px;
     }
-    .search button{
+    .search button {
         width: 40px;
         height: 40px;
+        margin-right: 10px;
     }
-    .search button img{
-        width: 16px;
+    .search button img {
+        width: 15px;
     }
+
     .weather-icon{
         width: 120px;
         margin-top: 24px;
