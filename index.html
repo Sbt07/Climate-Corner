@@ -1,26 +1,43 @@
 <!DOCTYPE html>
-<html lang = "en"></html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
-    <link rel="stylesheet" href="font/Rimouski.css">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body class="bg">
-    <div class="container">
-      <div class="app-title"><p>Weather</p></div>
-      <div class="notification"></div>
-      <div class="weather-container">
-        <div class="weather-icon"><img src="icons/unknown.png" alt="X"></div>
-        <div class="temperature-value"><p>- °<span>C</span></p></div>
-        <div class="temperature-description"><p> - </p></div>
-        <div class="location"><p>-</p></div>
-      </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="Style.css">
+    <title>Climate Corner</title>
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter City Name" spellcheck="false">
+            <button><img src="search.png" alt="Search"></button>
+        </div>
+        <div class="error">
+            <p>Invalid City Name</p>
+        </div>
+        <div class="weather">
+            <img src="rain.png" alt="rain" class="weather-icon">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">New York</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="humidity.png" alt="humidity">
+                    <div>
+                    <p class="humidity">50%</p>
+                    <p class="Condition">Humidity</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="wind.png" alt="wind">
+                <div>
+                <p class="wind">15 km/h</p>
+                <p class="Condition">Wind Speed</p>
+            </div>
+        </div>
+        </div>
     </div>
-
-    <script src="app.js"></script>
-  </body>
+</div>
+   <script src="Script.js"></script>
+</body>
 </html>
